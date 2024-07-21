@@ -6,7 +6,6 @@ import Longad from "@/components/Longad";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Bignews />
       <div className="flex flex-col mt-4 gap-3">
         <Longad />

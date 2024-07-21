@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="w-screen mx-auto">
-          <div className="w-[70%] mx-auto flex flex-col gap-12">{children}</div>
+          <div className="w-[70%] mx-auto flex flex-col gap-12">
+            <Navbar />
+            {children}</div>
         </div>
       </body>
     </html>
